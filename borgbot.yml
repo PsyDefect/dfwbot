@@ -1,11 +1,10 @@
 debug: 1
 server: irc.perl.org
 port: 6667
-user: # no username needed - there is no authentication at irc.perl.org
+user: 
 name: IRC Bot that assimilates other bots by consuming their Moose Roles
 channels:
-   - bot-test
-   - bots
+   - jdex-test
 nick: borg
 alt_nicks:
    - borgbot
@@ -16,7 +15,7 @@ plugins:
    - DFWpm::BotPlugin::Greeter
    - DFWpm::BotPlugin::Dictionary
    - DFWpm::BotPlugin::Spelling
+   - DFWpm::BotPlugin::Discuss
 dict:
-   # please get your own API key from dictionaryapi.com
    api_key: de39f9fa-659b-4634-be74-8e31babfe463
    api_url: http://www.dictionaryapi.com/api/v1/references/collegiate/xml
